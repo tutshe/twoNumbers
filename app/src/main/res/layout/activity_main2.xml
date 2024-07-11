@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#227398"
+    tools:context=".MainActivity2">
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/swWiFi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="#FFFFFF"
+        android:checked="true"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:text="Wi Fi"
+        android:textColor="#673AB7"
+        android:textOff="Off"
+        android:textOn="On"
+        android:textSize="20sp"
+        android:theme="@style/Theme.AppCompat.Light"
+        app:showText="true" />
+    <!-- set the current state of the Switch-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="30dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvNum1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="#FFFFFF"
+            android:textColor="#673AB7"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:hint="num1" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="#EFBAF8"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:id="@+id/tvNum2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:padding="10dp"
+            android:background="#FFFFFF"
+            android:textColor="#673AB7"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:hint="num2"
+
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvAnnounce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#FFFFFF"
+        android:layout_margin="30dp"
+        android:textColor="#673AB7"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:text="Please Choose"
+
+        />
+
+    <CheckBox
+        android:id="@+id/cbxSound"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="#FFFFFF"
+        android:textColor="#673AB7"
+        android:buttonTint="#B798EF"
+        android:checked="true"
+        android:textSize="30dp"
+        android:text="Sound" />
+
+    <RadioGroup
+        android:id="@+id/rbGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF"
+            android:text="Option 1" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF"
+            android:text="Option 2" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Option 3"
+            android:textColor="#FFFF" />
+    </RadioGroup>
+
+
+</LinearLayout>
